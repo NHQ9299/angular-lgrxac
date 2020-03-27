@@ -11,10 +11,11 @@ import { FooterComponent } from './footer/footer.component';
 import { DanhSachSanPhamComponent } from './danh-sach-san-pham/danh-sach-san-pham.component';
 import { QuanLySanPhamComponent } from './quan-ly-san-pham/quan-ly-san-pham.component';
 import { AppRoutingModule } from './app-routing.module';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule],
-  declarations: [ AppComponent, HelloComponent, NavComponent, SlideComponent, FooterComponent, DanhSachSanPhamComponent, QuanLySanPhamComponent ],
+  declarations: [ AppComponent, HelloComponent, NavComponent, SlideComponent, FooterComponent, DanhSachSanPhamComponent, QuanLySanPhamComponent, NotFoundComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
