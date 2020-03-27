@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from "../services/product.service";
+import { Product } from "../Product";
+import { ActivatedRoute } from "@angular/router";
 
 @Component({
   selector: 'app-quan-ly-san-pham',
@@ -7,9 +10,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuanLySanPhamComponent implements OnInit {
 
-  constructor() { }
+  products: Product[];
+  constructor(
+    private productService: ProductService,
+    private activatedRoute: ActivatedRoute
+  ) {}
 
   ngOnInit() {
+    this.getProduct()
+    console.log(this.getProduct)
+  }
+
+  getProduct(){
+    this.productService.getProducts().subscribe(response => this.products = response, error => console.log(error));
   }
 
 }

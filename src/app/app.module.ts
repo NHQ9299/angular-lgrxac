@@ -12,10 +12,13 @@ import { DanhSachSanPhamComponent } from './danh-sach-san-pham/danh-sach-san-pha
 import { QuanLySanPhamComponent } from './quan-ly-san-pham/quan-ly-san-pham.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { ProductService } from './services/product.service';
+import { ChiTietComponent } from './chi-tiet/chi-tiet.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule],
-  declarations: [ AppComponent, HelloComponent, NavComponent, SlideComponent, FooterComponent, DanhSachSanPhamComponent, QuanLySanPhamComponent, NotFoundComponent ],
-  bootstrap:    [ AppComponent ]
+  declarations: [ AppComponent, HelloComponent, NavComponent, SlideComponent, FooterComponent, DanhSachSanPhamComponent, QuanLySanPhamComponent, NotFoundComponent, ChiTietComponent ],
+  bootstrap:    [ AppComponent ],
+  providers: [ProductService]
 })
 export class AppModule { }
