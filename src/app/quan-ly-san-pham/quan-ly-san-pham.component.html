@@ -18,9 +18,9 @@
       <th scope="row">{{i}}</th>
       <td><a >{{product.name}}</a></td>
       <td>{{product.price}}</td>
-      <td>{{product.decs}}</td>
+      <td>{{product.desc}}</td>
       <td width="200" class="text-right">
-        <button class="btn btn-primary" >Edit</button>
+        <button class="btn btn-primary" routerLink="/product/edit/{{product.id}}" >Edit</button>
         <button class="btn btn-danger ml-2"  (click)="removeItem(product.id)">Remove</button>
       </td>
     </tr>

@@ -14,10 +14,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ProductService } from './services/product.service';
 import { ChiTietComponent } from './chi-tiet/chi-tiet.component';
+import { EditSanPhamComponent } from './edit-san-pham/edit-san-pham.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule],
-  declarations: [ AppComponent, HelloComponent, NavComponent, SlideComponent, FooterComponent, DanhSachSanPhamComponent, QuanLySanPhamComponent, NotFoundComponent, ChiTietComponent ],
+  declarations: [ AppComponent, HelloComponent, NavComponent, SlideComponent, FooterComponent, DanhSachSanPhamComponent, QuanLySanPhamComponent, NotFoundComponent, ChiTietComponent, EditSanPhamComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
 })
