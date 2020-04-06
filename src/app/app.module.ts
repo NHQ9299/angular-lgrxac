@@ -15,11 +15,12 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ProductService } from './services/product.service';
 import { ChiTietComponent } from './chi-tiet/chi-tiet.component';
 import { EditSanPhamComponent } from './edit-san-pham/edit-san-pham.component';
-import { ThemSanPhamComponent } from './them-san-pham/them-san-pham.component';
+import { AddSanPhamComponent } from './add-san-pham/add-san-pham.component';
+
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule],
-  declarations: [ AppComponent, HelloComponent, NavComponent, SlideComponent, FooterComponent, DanhSachSanPhamComponent, QuanLySanPhamComponent, NotFoundComponent, ChiTietComponent, EditSanPhamComponent, ThemSanPhamComponent ],
+  declarations: [ AppComponent, HelloComponent, NavComponent, SlideComponent, FooterComponent, DanhSachSanPhamComponent, QuanLySanPhamComponent, NotFoundComponent, ChiTietComponent, EditSanPhamComponent, AddSanPhamComponent],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
 })

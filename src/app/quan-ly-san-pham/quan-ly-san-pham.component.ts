@@ -18,7 +18,6 @@ export class QuanLySanPhamComponent implements OnInit {
 
   ngOnInit() {
     this.getProduct()
-    console.log(this.getProduct)
   }
 
   getProduct(){
