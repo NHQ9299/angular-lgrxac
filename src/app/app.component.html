@@ -1,61 +1,74 @@
 <!DOCTYPE HTML>
 <html>
+
 <body>
-		<!----container---->
-		<div class="container">
-			<!----top-header---->
-			<div class="top-header">
-				<div class="logo">
-					<a href="index.html"><img src="https://i.imgur.com/bvcOVvG.png" title="barndlogo" /></a>
+	<!----container---->
+	<div class="container">
+		<!----top-header---->
+		<div class="top-header">
+			<div class="logo">
+				<a href="index.html"><img src="https://i.imgur.com/bvcOVvG.png" title="barndlogo" /></a>
+			</div>
+			<div class="top-header-info">
+				<div class="top-contact-info">
+					<ul class="unstyled-list list-inline">
+						<li><span class="phone"> </span>0328259299</li>
+						<li><span class="mail"> </span><a href="#">kunss97@gmail.com</a></li>
+						<div class="clearfix"> </div>
+					</ul>
 				</div>
-				<div class="top-header-info">
-					<div class="top-contact-info">
+				<div class="cart-details">
+					<div class="add-to-cart">
 						<ul class="unstyled-list list-inline">
-							<li><span class="phone"> </span>0328259299</li>
-							<li><span class="mail"> </span><a href="#">kunss97@gmail.com</a></li>
+							<li><span class="cart"><img src="https://i.imgur.com/tD1BQa6.png"/> </span>
+								<ul class="cart-sub">
+									<li>
+										<p> 0 Products</p>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="login-rigister">
+						<ul class="unstyled-list list-inline">
+
+							<li><a class="login" href="#">Login</a></li>
+							<li><a class="rigister" href="#">REGISTER <span> </span></a></li>
 							<div class="clearfix"> </div>
 						</ul>
 					</div>
-					<div class="cart-details">
-						<div class="add-to-cart">
-							<ul class="unstyled-list list-inline">
-								<li><span class="cart"><img src="https://i.imgur.com/tD1BQa6.png"/> </span>
-									<ul class="cart-sub">             
-										<li><p> 0 Products</p></li>
-									</ul>
-								</li>
-							</ul>
-						</div>
-						<div class="login-rigister">
-							<ul class="unstyled-list list-inline">
-
-								<li><a class="login" href="#">Login</a></li>
-								<li><a class="rigister" href="#">REGISTER <span> </span></a></li>
-								<div class="clearfix"> </div>
-							</ul>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
+					<div class="clearfix"> </div>
 				</div>
-				<div class="clearfix"> </div>
 			</div>
-			<!----//top-header---->
+			<div class="clearfix"> </div>
+		</div>
+		<!----//top-header---->
 
-			<div class="top-header-nav"> 
+		<div class="top-header-nav">
 
-			 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+				<div class="container">
+					<a class="navbar-brand" href="#">Gideon</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
 					<app-nav></app-nav>
-			  </nav>
-			</div>
-      
-    </div>
 
-      
-      <div>
-            <router-outlet></router-outlet>
-      </div>
-      <!-- footer -->
-      <app-footer></app-footer>
+				</div>
+
+			</nav>
+
+		</div>
+
+	</div>
+
+
+	<div>
+		<router-outlet></router-outlet>
+	</div>
+	<!-- footer -->
+	<app-footer></app-footer>
 </body>
-</html>
 
+</html>
