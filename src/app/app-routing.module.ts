@@ -6,6 +6,7 @@ import { QuanLySanPhamComponent } from "./quan-ly-san-pham/quan-ly-san-pham.comp
 import { ChiTietComponent } from "./chi-tiet/chi-tiet.component";
 import { EditSanPhamComponent } from "./edit-san-pham/edit-san-pham.component";
 import { AddSanPhamComponent } from "./add-san-pham/add-san-pham.component";
+import { LoginComponent } from "./login/login.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "danhsach", pathMatch: "full" },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: "product/:productID", component: ChiTietComponent },
   { path: "product/edit/:id", component: EditSanPhamComponent },
   { path: "addSanPham", component: AddSanPhamComponent},
+  { path: "login" , component :LoginComponent},
 
   { path: "404", component: NotFoundComponent },
   { path: "**", redirectTo: "404", pathMatch: "full" }

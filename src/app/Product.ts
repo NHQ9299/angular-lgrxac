@@ -5,4 +5,5 @@ export class Product {
   desc: string;
   anh : string;
   status: boolean;
+  type :string;
 }

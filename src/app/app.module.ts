@@ -16,11 +16,12 @@ import { ProductService } from './services/product.service';
 import { ChiTietComponent } from './chi-tiet/chi-tiet.component';
 import { EditSanPhamComponent } from './edit-san-pham/edit-san-pham.component';
 import { AddSanPhamComponent } from './add-san-pham/add-san-pham.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule],
-  declarations: [ AppComponent, HelloComponent, NavComponent, SlideComponent, FooterComponent, DanhSachSanPhamComponent, QuanLySanPhamComponent, NotFoundComponent, ChiTietComponent, EditSanPhamComponent, AddSanPhamComponent],
+  declarations: [ AppComponent, HelloComponent, NavComponent, SlideComponent, FooterComponent, DanhSachSanPhamComponent, QuanLySanPhamComponent, NotFoundComponent, ChiTietComponent, EditSanPhamComponent, AddSanPhamComponent, LoginComponent],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
 })
