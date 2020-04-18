@@ -1,12 +1,12 @@
 import { NgModule, Component } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
-import { DanhSachSanPhamComponent } from "./danh-sach-san-pham/danh-sach-san-pham.component";
 import { NotFoundComponent } from "./not-found/not-found.component";
-import { QuanLySanPhamComponent } from "./quan-ly-san-pham/quan-ly-san-pham.component";
-import { ChiTietComponent } from "./chi-tiet/chi-tiet.component";
-import { EditSanPhamComponent } from "./edit-san-pham/edit-san-pham.component";
-import { AddSanPhamComponent } from "./add-san-pham/add-san-pham.component";
+import { QuanLySanPhamComponent } from "../backend/quan-ly-san-pham/quan-ly-san-pham.component";
+import { EditSanPhamComponent } from "../backend/edit-san-pham/edit-san-pham.component";
+import { AddSanPhamComponent } from "../backend/add-san-pham/add-san-pham.component";
 import { LoginComponent } from "./login/login.component";
+import { ChiTietComponent } from "../backend/chi-tiet/chi-tiet.component";
+import { DanhSachSanPhamComponent } from "../backend/danh-sach-san-pham/danh-sach-san-pham.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "danhsach", pathMatch: "full" },
@@ -14,8 +14,8 @@ const routes: Routes = [
   { path: "quan-ly-san-pham", component: QuanLySanPhamComponent },
   { path: "product/:productID", component: ChiTietComponent },
   { path: "product/edit/:id", component: EditSanPhamComponent },
-  { path: "addSanPham", component: AddSanPhamComponent},
-  { path: "login" , component :LoginComponent},
+  { path: "addSanPham", component: AddSanPhamComponent },
+  { path: "login", component: LoginComponent },
 
   { path: "404", component: NotFoundComponent },
   { path: "**", redirectTo: "404", pathMatch: "full" }
