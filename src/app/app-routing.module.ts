@@ -4,13 +4,13 @@ import { NotFoundComponent } from "./not-found/not-found.component";
 import { QuanLySanPhamComponent } from "../backend/quan-ly-san-pham/quan-ly-san-pham.component";
 import { EditSanPhamComponent } from "../backend/edit-san-pham/edit-san-pham.component";
 import { AddSanPhamComponent } from "../backend/add-san-pham/add-san-pham.component";
-import { LoginComponent } from "./login/login.component";
+import { LoginComponent } from "../backend/login/login.component";
 import { ChiTietComponent } from "../backend/chi-tiet/chi-tiet.component";
 import { DanhSachSanPhamComponent } from "../backend/danh-sach-san-pham/danh-sach-san-pham.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "danhsach", pathMatch: "full" },
-  { path: "danhsach", component: DanhSachSanPhamComponent },
+  { path: "danhsach", component: DanhSachSanPhamComponent},
   { path: "quan-ly-san-pham", component: QuanLySanPhamComponent },
   { path: "product/:productID", component: ChiTietComponent },
   { path: "product/edit/:id", component: EditSanPhamComponent },

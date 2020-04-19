@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Product} from '../Product';
-import { ProductService } from '../services/product.service';
+import { Product } from '../../app/Product';
+import { ProductService } from '../../app/services/product.service';
 import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-chi-tiet',
