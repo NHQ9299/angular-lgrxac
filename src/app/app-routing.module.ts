@@ -7,7 +7,7 @@ import { LoginComponent } from "../backend/login/login.component";
 import { ChiTietComponent } from "../backend/chi-tiet/chi-tiet.component";
 import { DanhSachSanPhamComponent } from "../backend/danh-sach-san-pham/danh-sach-san-pham.component";
 import { NotFoundComponent } from "../backend/not-found/not-found.component";
-import { AdminComponent } from "../backend/admin/admin.component";
+
 
 const routes: Routes = [
   { path: "", redirectTo: "danhsach", pathMatch: "full" },
@@ -17,12 +17,6 @@ const routes: Routes = [
   { path: "product/edit/:id", component: EditSanPhamComponent },
   { path: "addSanPham", component: AddSanPhamComponent },
   { path: "login", component: LoginComponent },
-  { path: "admin", component:AdminComponent,
-    children:[
-      {path: "", redirectTo:"danhsach", pathMatch:"full"},
-      {path: "danhsach", component: DanhSachSanPhamComponent}
-    ]
-  },
 
   { path: "404", component: NotFoundComponent },
   { path: "**", redirectTo: "404", pathMatch: "full" }
